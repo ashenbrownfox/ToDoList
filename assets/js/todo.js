@@ -17,9 +17,14 @@ $(document).ready(function(){
 			console.log(toDoText);
 			$(this).val("");
 
-			$("ul").append("<li><span class='delete'>X</span> "+ toDoText
+			$("ul").append("<li><span class='delete'><i class='fa fa-trash' aria-hidden='true'></i></span> "+ toDoText
 				+"</li>");
 			
 		}
+	});
+
+
+	$(".fa-pencil-square-o").click(function(){
+		$("input[type='text']").fadeToggle();
 	});
 });
